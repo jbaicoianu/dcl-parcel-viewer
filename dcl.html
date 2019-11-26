@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Decentraland Parcel Viewer</title>
+  </head>
+  <body>
+    <script src="https://web.janusvr.com/janusweb.js"></script>
+    <janus-viewer>
+      <FireBoxRoom>
+      <Assets>
+        <AssetScript src="https://baicoianu.com/~bai/highfidelity/dcl.js" />
+        <AssetScript src="https://baicoianu.com/~bai/highfidelity/dcl2jml.js" />
+        <AssetImage id="sky_side" src="https://vesta.janusvr.com/files/Spyduck/assets/alien/textures/sky_side.png" tex_clamp="true" tex_colorspace="sRGB" />
+        <AssetImage id="sky_down" src="https://vesta.janusvr.com/files/bepis/sky/black.png" tex_clamp="true" />
+        <AssetImage id="rmap" src="https://vesta.janusvr.com/files/bepis/sky/night/Night_Radiance.dds" tex_clamp="true" />
+        <AssetImage id="sky_up" src="https://vesta.janusvr.com/files/Spyduck/assets/alien/textures/sky.png" tex_clamp="true" tex_colorspace="sRGB" />
+        <AssetImage id="irmap" src="https://vesta.janusvr.com/files/bepis/sky/night/Night_Irradiance.dds" tex_clamp="true" />
+        <AssetImage id="sky_front" src="https://vesta.janusvr.com/files/bepis/zelda/kokiri0/negz.jpg" tex_clamp="true" tex_colorspace="sRGB" />
+        <AssetImage id="sky_down" src="https://vesta.janusvr.com/files/Spyduck/assets/alien/textures/sky_down.png"/>
+      </Assets>
+      <Room pos="0 0 0" xdir="1 0 0" zdir="0 0 -1" far_dist="10000" use_local_asset="room_plane" visible="false" shadows="true" fog="true" fog_col="0 0 0" fog_end="200" fog_mode="linear" skybox_left_id="sky_side" skybox_right_id="sky_side" skybox_front_id="sky_side" skybox_back_id="sky_side" skybox_up_id="sky_up" skybox_down_id="sky_up">
+
+        <dcl />
+        <object id="plane" pos="0 -50 0" scale="10000 10000 1" rotation="90 0 0" col="black" cull_face="none" />
+      </Room>
+      </FireBoxRoom>
+    </janus-viewer>
+  </body>
+</html>
